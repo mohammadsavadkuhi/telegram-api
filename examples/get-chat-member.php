@@ -3,8 +3,14 @@
 include('basics.php');
 
 use GuzzleHttp\Exception\ClientException;
+/* pre php 7 
 use unreal4u\TelegramAPI\Telegram\Methods\GetChatMember;
 use unreal4u\TelegramAPI\TgLog;
+*/
+// php 7 
+use unreal4u\TelegramAPI\{Telegram\Methods\GetChatMember , TgLog}  ; 
+
+
 
 $tgLog = new TgLog(BOT_TOKEN);
 
